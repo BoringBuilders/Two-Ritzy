@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body>
+    {{ partial "header.html" . }}
+    <main class="container">
+      <div class="left-column">
+        {{ partial "sections/about.html" . }}
+        {{ partial "sections/writing.html" . }}
+      </div>
+      <div class="right-column">
+        {{ partial "sections/portfolio.html" . }}
+        {{ partial "sections/projects.html" . }}
+      </div>
+    </main>
+    {{ partial "footer.html" . }}
+  </body>
+</html>

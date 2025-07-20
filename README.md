@@ -1,3 +1,3 @@
 # Two-Ritzy
 
-A two-column, Micro.blog-compatible Hugo theme based on Ritzy.
+A Micro.blog-compatible Hugo theme with a clean two-column layout.

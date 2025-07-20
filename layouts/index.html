@@ -1,1 +1,28 @@
-{{ define "main" }}{{ .Content }}{{ end }}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ .Site.Title }}</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>{{ .Site.Title }}</h1>
+    </header>
+
+    <main class="container">
+      <div class="left-column">
+        {{ partial "sections/about.html" . }}
+        {{ partial "sections/writing.html" . }}
+      </div>
+      <div class="right-column">
+        {{ partial "sections/portfolio.html" . }}
+        {{ partial "sections/projects.html" . }}
+      </div>
+    </main>
+
+    <footer>
+      <p>© {{ now.Year }}</p>
+    </footer>
+  </body>
+</html>
